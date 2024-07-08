@@ -72,7 +72,6 @@ function App() {
         || legalTerm['Fonte'].toUpperCase().includes('DUARTINA')
         || legalTerm['Fonte'].toUpperCase().includes('EMBU')
         || legalTerm['Fonte'].toUpperCase().includes('EMBU DAS ARTES')
-        || legalTerm['Fonte'].toUpperCase().includes('EMBU-GUACU')
         || legalTerm['Fonte'].toUpperCase().includes('EMBU-GUAÇU')
         || legalTerm['Fonte'].toUpperCase().includes("ESTRELA D'OESTE")
         || legalTerm['Fonte'].toUpperCase().includes('FRANCO DA ROCHA')
@@ -181,8 +180,6 @@ function App() {
         || legalTerm['Fonte'].toUpperCase().includes('PENHA DE FRANCA')
         || legalTerm['Fonte'].toUpperCase().includes('PENHA DE FRANÇA')
         || legalTerm['Fonte'].toUpperCase().includes('PENHA')
-        || legalTerm['Fonte'].toUpperCase().includes('SETOR DE CARTA PRECATÓRIA SP')
-        || legalTerm['Fonte'].toUpperCase().includes('SETOR DE CARTA PRECATORIA SP')
         || legalTerm['Fonte'].toUpperCase().includes('UPJ 1ª')
         || legalTerm['Fonte'].toUpperCase().includes('UPJ 6ª')
       ) {
