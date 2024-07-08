@@ -34,9 +34,11 @@ function App() {
 
       console.log(legalTerm)
       if (
-        legalTerm['Assunto']
-        && typeof legalTerm['Assunto'] === 'string'
-        && legalTerm['Assunto'].toUpperCase().includes('AJUIZAR AÇÃO')
+        (legalTerm['Assunto']
+          && typeof legalTerm['Assunto'] === 'string'
+          && legalTerm['Assunto'].toUpperCase().includes('AJUIZAR AÇÃO')
+        ) || legalTerm['Fonte'].toUpperCase().includes('NPJ')
+
       ) {
         legalTerm['Advogado'] = 'LETÍCIA';
       } else if (
@@ -62,7 +64,10 @@ function App() {
         || legalTerm['Fonte'].toUpperCase().includes('CÂNDIDO MOTA')
         || legalTerm['Fonte'].toUpperCase().includes('CARAPICUIBA')
         || legalTerm['Fonte'].toUpperCase().includes('CARAPICUÍBA')
-        || legalTerm['Fonte'].toUpperCase().includes('CARDOSO')
+        || (
+          legalTerm['Fonte'].toUpperCase().includes('CARDOSO')
+          && !legalTerm['Fonte'].toUpperCase().includes('FERNANDA YANNA MOREIRA CARDOSO')
+        )
         || legalTerm['Fonte'].toUpperCase().includes('COSMOPOLIS')
         || legalTerm['Fonte'].toUpperCase().includes('COSMÓPOLIS')
         || legalTerm['Fonte'].toUpperCase().includes('COTIA')
@@ -121,20 +126,6 @@ function App() {
       ) {
         legalTerm['Advogado'] = 'GISELE';
       } else if (
-        legalTerm['Fonte'].toUpperCase().includes('SANTANA')
-        || legalTerm['Fonte'].toUpperCase().includes('VILA PRUDENTE')
-        || legalTerm['Fonte'].toUpperCase().includes('TATUAPE')
-        || legalTerm['Fonte'].toUpperCase().includes('TATUAPÉ')
-        || legalTerm['Fonte'].toUpperCase().includes('IPIRANGA')
-        || legalTerm['Fonte'].toUpperCase().includes('GUARULHOS')
-        || legalTerm['Fonte'].toUpperCase().includes('NOSSA SENHORA DO O')
-        || legalTerm['Fonte'].toUpperCase().includes('NOSSA SENHORA DO Ó')
-        || legalTerm['Fonte'].toUpperCase().includes('UPJ 31ª')
-        || legalTerm['Fonte'].toUpperCase().includes('UPJ 36ª')
-        || legalTerm['Fonte'].toUpperCase().includes('UPJ 41ª')
-      ) {
-        legalTerm['Advogado'] = 'FERNANDA';
-      } else if (
         legalTerm['Fonte'].toUpperCase().includes('ITAPECERICA DA SERRA')
         || legalTerm['Fonte'].toUpperCase().includes('ITAPEVI')
         || legalTerm['Fonte'].toUpperCase().includes('ITUVERAVA')
@@ -185,6 +176,23 @@ function App() {
         || legalTerm['Fonte'].toUpperCase().includes('UPJ 6ª')
       ) {
         legalTerm['Advogado'] = 'ISABELA';
+      } else if (
+        (
+          legalTerm['Fonte'].toUpperCase().includes('SANTANA')
+          && !legalTerm['Fonte'].toUpperCase().includes('LUCAS SOUZA SANTANA')
+        )
+        || legalTerm['Fonte'].toUpperCase().includes('VILA PRUDENTE')
+        || legalTerm['Fonte'].toUpperCase().includes('TATUAPE')
+        || legalTerm['Fonte'].toUpperCase().includes('TATUAPÉ')
+        || legalTerm['Fonte'].toUpperCase().includes('IPIRANGA')
+        || legalTerm['Fonte'].toUpperCase().includes('GUARULHOS')
+        || legalTerm['Fonte'].toUpperCase().includes('NOSSA SENHORA DO O')
+        || legalTerm['Fonte'].toUpperCase().includes('NOSSA SENHORA DO Ó')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 31ª')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 36ª')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 41ª')
+      ) {
+        legalTerm['Advogado'] = 'FERNANDA';
       }
 
       return legalTerm;
