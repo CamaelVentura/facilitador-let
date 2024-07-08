@@ -124,6 +124,7 @@ function App() {
         || legalTerm['Fonte'].toUpperCase().includes('IPAUSSU')
         || legalTerm['Fonte'].toUpperCase().includes('JABAQUARA')
         || legalTerm['Fonte'].toUpperCase().includes('PENHA DE FRANÇA')
+        || legalTerm['Fonte'].toUpperCase().includes('PENHA')
         || legalTerm['Fonte'].toUpperCase().includes('SETOR DE CARTA PRECATÓRIA SP')
       ) {
         legalTerm['Advogado'] = 'ISABELA';
