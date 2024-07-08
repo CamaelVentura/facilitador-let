@@ -37,8 +37,10 @@ function App() {
         (legalTerm['Assunto']
           && typeof legalTerm['Assunto'] === 'string'
           && legalTerm['Assunto'].toUpperCase().includes('AJUIZAR AÇÃO')
-        ) || legalTerm['Fonte'].toUpperCase().includes('NPJ')
-
+        ) || (
+          legalTerm['Fonte'].toUpperCase().includes('NPJ')
+          && !legalTerm['Fonte'].toUpperCase().includes('CNPJ')
+        )
       ) {
         legalTerm['Advogado'] = 'LETÍCIA';
       } else if (
