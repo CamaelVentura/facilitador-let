@@ -131,6 +131,7 @@ function App() {
         || legalTerm['Fonte'].toUpperCase().includes('NOSSA SENHORA DO Ó')
         || legalTerm['Fonte'].toUpperCase().includes('UPJ 31ª')
         || legalTerm['Fonte'].toUpperCase().includes('UPJ 36ª')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 41ª')
       ) {
         legalTerm['Advogado'] = 'FERNANDA';
       } else if (
