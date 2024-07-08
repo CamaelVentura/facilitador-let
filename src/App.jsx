@@ -32,8 +32,10 @@ function App() {
         return legalTerm;
       }
 
+      console.log(legalTerm)
       if (
         legalTerm['Assunto']
+        && typeof legalTerm['Assunto'] === 'string'
         && legalTerm['Assunto'].toUpperCase().includes('AJUIZAR AÇÃO')
       ) {
         legalTerm['Advogado'] = 'LETÍCIA';
