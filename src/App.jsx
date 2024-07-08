@@ -33,6 +33,11 @@ function App() {
       }
 
       if (
+        legalTerm['Assunto']
+        && legalTerm['Assunto'].toUpperCase().includes('AJUIZAR AÇÃO')
+      ) {
+        legalTerm['Advogado'] = 'LETÍCIA';
+      } else if (
         legalTerm['Fonte'].toUpperCase().includes('ALTINOPOLIS')
         || legalTerm['Fonte'].toUpperCase().includes('AMERICO BRASILIENSE')
         || legalTerm['Fonte'].toUpperCase().includes('ANDRADINA')
