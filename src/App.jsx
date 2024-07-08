@@ -68,6 +68,8 @@ function App() {
         || legalTerm['Fonte'].toUpperCase().includes('IEPE')
         || legalTerm['Fonte'].toUpperCase().includes('LAPA')
         || legalTerm['Fonte'].toUpperCase().includes('PINHEIROS')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 11ª')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 16ª')
       ) {
         legalTerm['Advogado'] = 'CAIO';
       } else if (
@@ -83,6 +85,8 @@ function App() {
         || legalTerm['Fonte'].toUpperCase().includes('SAO BERNARDO DO CAMPO')
         || legalTerm['Fonte'].toUpperCase().includes('SANTO AMARO')
         || legalTerm['Fonte'].toUpperCase().includes('BUTANTÃ')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 21ª')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 26ª')
       ) {
         legalTerm['Advogado'] = 'GISELE';
       } else if (
@@ -92,6 +96,8 @@ function App() {
         || legalTerm['Fonte'].toUpperCase().includes('IPIRANGA')
         || legalTerm['Fonte'].toUpperCase().includes('GUARULHOS')
         || legalTerm['Fonte'].toUpperCase().includes('NOSSA SENHORA DO Ó')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 31ª')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 36ª')
       ) {
         legalTerm['Advogado'] = 'FERNANDA';
       } else if (
@@ -126,6 +132,8 @@ function App() {
         || legalTerm['Fonte'].toUpperCase().includes('PENHA DE FRANÇA')
         || legalTerm['Fonte'].toUpperCase().includes('PENHA')
         || legalTerm['Fonte'].toUpperCase().includes('SETOR DE CARTA PRECATÓRIA SP')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 1ª')
+        || legalTerm['Fonte'].toUpperCase().includes('UPJ 6ª')
       ) {
         legalTerm['Advogado'] = 'ISABELA';
       }
